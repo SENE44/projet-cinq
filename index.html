@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>projet 5</title>
+</head>
+<body>
+    <header id="header">
+        <div id="fix">
+            <h3><a href="#header">retour</a></h3>
+        </div>
+        <div class="entete">
+            <div class="budget">
+                <h1><span>B</span>udget</h1>
+            </div>
+            <div class="gestion">
+                <h6>gestion du budget</h6>
+            </div>
+        </div>
+
+    </header><br><br>
+    <div class="section1">
+        <div class="ts">
+            <div class="tab1">
+                <table class="tabe1">
+                    <tr>
+                        <th>Budget</th>
+                    </tr>
+                    <tr>
+                        <td>120.000F CFA</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab2">
+                <table class="tabe2">
+                    <tr>
+                        <th>Dépenses</th>
+                    </tr>
+                    <tr>
+                        <td id="lasomme">100.000F CFA</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab3">
+                <table class="tabe3">
+                    <tr>
+                        <th>Solde</th>
+                    </tr>
+                    <tr>
+                        <td>20.000F CFA</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="section2">
+        <div class="T1">
+            <table class="tableau1">
+                <CAption>Liste des depenses</CAption>
+                <tr>
+                    <th>TITRE</th>
+                    <th>MONTANT</th>
+                    <th>ACTIONS</th>
+                </tr>
+                <tbody id="tb"></tbody>
+                <tr>
+                    <td>Nouriture</td>
+                    <td>40.000F CFA</td>
+                    <td id="supprimer"><button  onclick= "this.parentNode.parentNode.remove()">supprimer</button></td>
+                </tr>
+                <tr>
+                    <td>Loyer</td>
+                    <td>30.000F CFA</td>
+                    <td id="supprimer"><button onclick= "this.parentNode.parentNode.remove()">supprimer</button></td>
+                </tr>
+                <tr>
+                    <td>Transport</td>
+                    <td>10.000F CFA</td>
+                    <td id="supprimer"><button  onclick= "this.parentNode.parentNode.remove()">supprimer</button></td>
+                </tr>
+                <tr>
+                    <td><h4>ajouterdepense<a href="#depenses"><img id="icon1" src="plus.png" alt="icone plus" width="9px" height="9px"></a></h4></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div><br><br>
+    <div class="section3">
+        <div class="T2">
+            <table class="tableau2">
+                <caption>liste des revenus</caption>
+                <tr>
+                    <th>TITRE</th>
+                    <th>MONTANT</th>
+                    <th>ACTIONS</th>
+                </tr>
+                <tbody id="tbe"></tbody>
+                <tr >
+                    <td>salaire</td>
+                    <td>300.000F CFA</td>
+                    <td id="supprimer"><button  onclick= "this.parentNode.parentNode.remove()">supprimer</button></td>
+                </tr>
+                <tr>
+                    <td>Business</td>
+                    <td>100.000F CFA</td>
+                    <td id="supprimer"><button  onclick= "this.parentNode.parentNode.remove()">supprimer</button></td>
+                </tr>
+                <tr>
+                    <td>Bonus</td>
+                    <td>30.000F CFA</td>
+                    <td id="supprimer"><button >supprimer</button></td>
+                </tr>
+                <tr>
+                    <td><h4>ajouterrevunu<a href="#revenus" ><img id="icon2" src="plus.png" alt="icone plus" width="9px" height="9px"></a></h4></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div><br><br>><br><br><br><br><br><br><br><br>><br><br><br><br><br><br><br><br>><br><br><br><br><br><br><br><br>
+    <div id="depenses" style="visibility: hidden;">
+        <div id="ajoutdepense">
+            <h3>ajouter depense</h3>
+        </div><BR></BR>
+        <form action="">
+            <label  for="titre">TITRE</label><br><br>
+            <input id="titre" type="text" placeholder="electricité"><br><br>
+            <label for="MONTANT">MONTANT</label><br><br>
+            <input id="MONTANT" type="number" placeholder="15.000F CFA"><br><br><br>
+            <input id="sub" type="submit" value="valider">
+        </form>
+    </div><br><br><br><br>><br><br><br><br><br><br><br><br>><br><br><br><br><br><br>><br><br><br><br><br><br><br>
+    <div id="revenus" style="visibility: hidden;">
+        <div id="ajoutrevenue">
+            <h3>ajouter revenu</h3>
+        </div><BR></BR>
+        <form id="formulaire2" action="">
+            <label for="titres">TITRE</label><br><br>
+            <input type="text" id="titres" placeholder="salaire"><br><br>
+            <label for="MONTANTs">MONTANT</label><br><br>
+            <input type="number" id="MONTANTs" placeholder="100.000F CFA"><br><br><br>
+            <input id="submi" type="submit" value="valider">
+        </form>
+    </div><br><br><br><br>><br><br><br><br><br><br><br><br>><br><br><br><br><br><br>
+
+    <script src="index.js"></script>
+</body>
+</html>

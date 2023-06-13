@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header .entete{
+    text-align: center;
+}
+header .entete .budget h1{
+    color: #d1c000;
+    margin-bottom: -18px;
+    padding-bottom: 9px;
+}
+#fix h3 a{
+    text-decoration: none;
+    float: left;
+    /*border:1.4px solid #0c5e69;*/
+    padding: 9px;
+    margin-top: 3px;
+    color: #0c5e69;
+    background-color: #d1c000;
+    font-size: 50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    position: fixed;
+    border-radius: 50%;
+    box-shadow: 1PX 1.4PX #e4dd90;
+}
+header .entete .budget span{
+    color: #0c5e69;
+    font-size: 190%;
+    font-weight: bold;
+}
+header .entete .gestion{
+    padding-top: 0px;
+    margin-top: 1px;
+}
+header .entete .gestion h6{
+    padding-top: 0px;
+    margin-top: 1px;
+    color: #0c5e69;
+}
+/*les 3 tableaux*/
+.section1 .tab1 input{
+    width: 100%;
+    height: 4vh;
+    box-shadow: 1px 2px 3px 1px #ebe3e3;
+    border: none;
+
+}
+.section1 .tab1 label{
+    width: 300%;
+    background-color: #0c5e69;
+    color: #FFF;
+    text-align: center;
+}
+.section1 .ts{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-right: 8px;
+}
+.section1 .ts table{
+    border-collapse: collapse;
+    padding: 0 30px;
+    width: 170%;
+    text-align: center;
+}
+
+.section1 .ts table th{
+    background-color: #0c5e69;
+    color: #FFF;
+    height: 4VH;
+}
+.section1 .ts table td{
+    background-color: #FFF;
+    height: 5vh;
+    box-shadow: 1px 2px 3px 1px #ebe3e3;
+    font-size: 10px;
+}
+/*tableau1*/
+.section2 .T1 table{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    border-collapse: collapse;
+}
+.section2 .T1 table td a{
+    float: right;
+    padding-right: 8px;
+}
+.section2 .T1 table caption{
+    float: left;
+    color: #d1c000;
+    padding-bottom: 4px;
+    font-size: 120%;
+}
+.section2 .T1 table th{
+    background-color: #0c5e69;
+    color: #fff;
+    font-weight: 200;
+    padding: 5px;
+    border-right: 0.4px solid #FFF;
+}
+.section2 .T1 table td{
+    padding:3px 0px ;
+    border: 0.3px dotted gray;
+    padding-left: 20px;
+    font-size: 13px;
+    font-weight: 100;
+    width: 30%;
+}
+#supprimer h5{
+    background-color: rgb(235, 38, 31);
+    width: min-content;
+    padding: 5px;
+    border-radius: 10%;
+    color: #FFF;
+    font-weight: 10;
+    font-size: 13PX;
+}
+.section2 .T1 table h4{
+    color: #d1c000;
+}
+/*TABLEAU 2*/
+.section3 .T2 table{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    border-collapse: collapse;
+}
+.section3 .T2 table caption{
+    float: left;
+    color: #d1c000;
+    padding-bottom: 4px;
+    font-size: 120%;
+}
+.section3 .T2 table th{
+    background-color: #0c5e69;
+    color: #fff;
+    font-weight: 200;
+    padding:5px;
+    border-right: 0.4px solid #FFF;
+}
+.section3 .T2 table td{
+    padding:3PX 10px ;
+    border: 0.3px dotted gray;
+    padding-left: 20px;
+    font-size: 13px;
+    font-weight: 100;
+    width: 30%;
+}
+#supprimer button{
+    background-color: #e04139;
+    width: min-content;
+    padding: 5px;
+    border-radius: 10%;
+    color: #FFF;
+    font-weight: 10;
+    font-size: 13PX;
+}
+.section3 .T2 table h4{
+    color: #d1c000;
+}
+.section3 .T2 table td a{
+    float: right;
+}
+/*partie de depense */
+form{
+    margin-left: 15%;
+}
+label{
+    color: #0c5e69;
+    font-weight: bold;
+    font-size: 15PX;
+}
+#ajoutdepense h3{
+    text-align: center;
+    text-transform: uppercase;
+    color: #0c5e69;    
+}
+input{
+    width: 70%;
+    height: 5VH;
+    padding: 4px;
+}
+#sub{
+    background-color: #0c5e69;
+    color: #fff;
+    font-size: 18PX;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+/*partie de revenu*/
+#formulaire2{
+    margin: 0 20%;
+}
+#submi{
+    background-color: #0c5e69;
+    color: #fff;
+    font-size: 18PX;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+#ajoutrevenue h3{
+    text-align: center;
+    text-transform: uppercase;
+    color: #0c5e69;    
+}
+
+@media screen and (max-width : 680px) {
+    #supprimer h5{
+        font-size: 8px;
+
+    }
+    h4{
+        font-size: 8px;
+    }
+    .section1 .ts table {
+        margin-right: 7%;
+    }
+    caption {
+        font-size: 9px;
+        display: inline;
+    }
+    #fix h3 a{
+        text-decoration: none;
+        float: left;
+
+        padding: 7px;
+        margin-top: 3px;
+        color: #0c5e69;
+        background-color: #d1c000;
+        font-size: 30%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+        position: fixed;
+        border-radius: 50%;
+        width: 5%;
+        box-shadow: 5px 6px #fffcfc;
+        font-weight: 1200
+    }
+};
