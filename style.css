@@ -40,19 +40,6 @@ header .entete .gestion h6{
     color: #0c5e69;
 }
 /*les 3 tableaux*/
-.section1 .tab1 input{
-    width: 100%;
-    height: 4vh;
-    box-shadow: 1px 2px 3px 1px #ebe3e3;
-    border: none;
-
-}
-.section1 .tab1 label{
-    width: 300%;
-    background-color: #0c5e69;
-    color: #FFF;
-    text-align: center;
-}
 .section1 .ts{
     display: flex;
     width: 100%;
@@ -76,6 +63,8 @@ header .entete .gestion h6{
     height: 5vh;
     box-shadow: 1px 2px 3px 1px #ebe3e3;
     font-size: 10px;
+    font-size: 110%;
+    font-weight: 600;
 }
 /*tableau1*/
 .section2 .T1 table{
@@ -109,6 +98,7 @@ header .entete .gestion h6{
     font-size: 13px;
     font-weight: 100;
     width: 30%;
+    text-transform: uppercase;
 }
 #supprimer h5{
     background-color: rgb(235, 38, 31);
@@ -150,8 +140,18 @@ header .entete .gestion h6{
     font-size: 13px;
     font-weight: 100;
     width: 30%;
+    text-transform: uppercase;
 }
 #supprimer button{
+    background-color: #e04139;
+    width: min-content;
+    padding: 5px;
+    border-radius: 10%;
+    color: #FFF;
+    font-weight: 10;
+    font-size: 13PX;
+}
+#supprimers button{
     background-color: #e04139;
     width: min-content;
     padding: 5px;
@@ -240,5 +240,13 @@ input{
         width: 5%;
         box-shadow: 5px 6px #fffcfc;
         font-weight: 1200
+    }
+    .section1 .ts table td{
+        background-color: #FFF;
+        height: 5vh;
+        box-shadow: 1px 2px 3px 1px #ebe3e3;
+        font-size: 10px;
+        font-size: 100%;
+        font-weight: 600;
     }
 };

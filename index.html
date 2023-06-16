@@ -29,7 +29,7 @@
                         <th>Budget</th>
                     </tr>
                     <tr>
-                        <td>120.000F CFA</td>
+                        <td id="lasommes">0</td>
                     </tr>
                 </table>
             </div>
@@ -38,8 +38,8 @@
                     <tr>
                         <th>Dépenses</th>
                     </tr>
-                    <tr>
-                        <td id="lasomme">100.000F CFA</td>
+                    <tr>        
+                        <td id="lasomme">0</td>
                     </tr>
                 </table>
             </div>
@@ -49,7 +49,7 @@
                         <th>Solde</th>
                     </tr>
                     <tr>
-                        <td>20.000F CFA</td>
+                        <td id="diff">0</td>
                     </tr>
                 </table>
             </div>
@@ -65,18 +65,18 @@
                     <th>ACTIONS</th>
                 </tr>
                 <tbody id="tb"></tbody>
-                <tr>
+                    <!--<tr>
                     <td>Nouriture</td>
                     <td>40.000F CFA</td>
-                    <td id="supprimer"><button  onclick= "this.parentNode.parentNode.remove()">supprimer</button></td>
+                    <td id="supprimer"><button  onclick= "this.parentNode.parentNode.remove(); alert('bien');">supprimer</button></td>
                 </tr>
                 <tr>
                     <td>Loyer</td>
                     <td>30.000F CFA</td>
                     <td id="supprimer"><button onclick= "this.parentNode.parentNode.remove()">supprimer</button></td>
-                </tr>
+                </tr>-->
                 <tr>
-                    <td>Transport</td>
+                    <td>EX: Transport</td>
                     <td>10.000F CFA</td>
                     <td id="supprimer"><button  onclick= "this.parentNode.parentNode.remove()">supprimer</button></td>
                 </tr>
@@ -99,21 +99,21 @@
                 </tr>
                 <tbody id="tbe"></tbody>
                 <tr >
-                    <td>salaire</td>
+                    <td>EX: salaire</td>
                     <td>300.000F CFA</td>
                     <td id="supprimer"><button  onclick= "this.parentNode.parentNode.remove()">supprimer</button></td>
                 </tr>
-                <tr>
+                <!--<tr>
                     <td>Business</td>
                     <td>100.000F CFA</td>
                     <td id="supprimer"><button  onclick= "this.parentNode.parentNode.remove()">supprimer</button></td>
-                </tr>
-                <tr>
+                </tr>-->
+               <!-- <tr>
                     <td>Bonus</td>
                     <td>30.000F CFA</td>
                     <td id="supprimer"><button >supprimer</button></td>
-                </tr>
-                <tr>
+                </tr>-->
+              <tr>
                     <td><h4>ajouterrevunu<a href="#revenus" ><img id="icon2" src="plus.png" alt="icone plus" width="9px" height="9px"></a></h4></td>
                     <td></td>
                     <td></td>
@@ -129,7 +129,7 @@
             <label  for="titre">TITRE</label><br><br>
             <input id="titre" type="text" placeholder="electricité"><br><br>
             <label for="MONTANT">MONTANT</label><br><br>
-            <input id="MONTANT" type="number" placeholder="15.000F CFA"><br><br><br>
+            <input id="MONTANT" value=0 type="number" placeholder="15.000F CFA"><br><br><br>
             <input id="sub" type="submit" value="valider">
         </form>
     </div><br><br><br><br>><br><br><br><br><br><br><br><br>><br><br><br><br><br><br>><br><br><br><br><br><br><br>

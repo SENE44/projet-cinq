@@ -6,22 +6,59 @@ function afficher(e){
     let titre=document.getElementById('titre').value;
     let montant=document.getElementById('MONTANT').value;
     let bodi=document.getElementById('tb')
+    
     if(titre!=''&& montant!='')
     { 
         let newtableau=
         `
         <tr>
             <td>${titre}</td>
-            <td>${montant}.F CFA</td>
-            <td id="supprimer" onclick= "this.parentNode.parentNode.remove()"><button>supprimer</button></td>
+            <td id="letd">${montant}.F CFA</td>
+            <td id="supprimer"><button  onclick= "this.parentNode.parentNode.remove()">supprimer</button></td>
         </tr>`
     let position='afterbegin'
     let newrow=bodi.insertAdjacentHTML(position, newtableau)
-    
     }
-    };
+    
+    //let sous=document.querySelectorAll('#supprimer')
+      //  sous[i].addEventListener('click', ()=>{
+        //let puser=parseInt(document.getElementById('lasomme').textContent)
+        //let mont=parseInt(montant)
+      //let  pusser=`${puser-mont}F CFA`
+      //let pucer=document.getElementById('lasomme')
+    //console.log(pusser)
 
-   
+     // pusser.innerText=pusser
+
+
+       // })
+    
+     
+        i()
+        n()
+      let sous=document.querySelectorAll('#supprimer')
+    for(let i=0; i<1; i++){
+       sous[i].addEventListener('click', ()=>{
+        let puser=parseInt(document.getElementById('lasomme').textContent)
+        let mont=parseInt(montant)
+      let  pusser=`${puser-mont}F CFA`
+      let pucer=document.getElementById('lasomme')
+    console.log(pusser)
+
+      pucer.innerText=pusser
+      n()
+      })
+    }
+    }
+    
+    function i(){
+        let numbers=parseInt(document.querySelector('#MONTANT').value)
+        let puser=parseInt(document.getElementById('lasomme').textContent)
+      let  pusser=`${puser+numbers}F CFA`
+      let pucer=document.getElementById('lasomme')
+      pucer.innerText=pusser
+
+        }
     
 //validations des revenues
 let valider=document.getElementById('submi');
@@ -40,12 +77,45 @@ function affichage(e){
         <tr>
             <td>${titres}</td>
             <td>${montants}.F CFA</td>
-            <td id="supprimer"><button  onclick= "this.parentNode.parentNode.remove()">supprimer</button></td>
+            <td id="supprimers"><button  onclick= "this.parentNode.parentNode.remove()">supprimer</button></td>
         </tr>`
     let positions='afterbegin'
     let newrow2=bodi2.insertAdjacentHTML(positions, newtableau)
     
+    }m()
+        n()
+        let sous=document.querySelectorAll('#supprimers')
+        for(let i=0; i<1; i++){
+           sous[i].addEventListener('click', ()=>{
+            let puser=parseInt(document.getElementById('lasommes').textContent)
+            let mont=parseInt(montants)
+          let  pusser=`${puser-mont}F CFA`
+          let pucer=document.getElementById('lasommes')
+        console.log(pusser)
+    
+          pucer.innerText=pusser
+          n()
+          })
+        }
+        
     }
+
+    function m(){
+        let numberss=parseInt(document.querySelector('#MONTANTs').value)
+        let pusers=parseInt(document.getElementById('lasommes').textContent)
+      let  pussers=`${pusers+numberss}F CFA`
+      let pucers=document.getElementById('lasommes')
+      pucers.innerText=pussers
+
+        }
+    
+    function n(){
+        let pusers=parseInt(document.getElementById('lasommes').textContent)
+        let puser=parseInt(document.getElementById('lasomme').textContent)
+        let difference=document.getElementById('diff')
+        let diff=`${pusers-puser}F CFA`
+        difference.innerText=diff
+
     }
 
 
